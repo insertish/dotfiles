@@ -20,7 +20,7 @@ if [ $? = 0 ]; then
   echo "Checked out config.";
   else
     echo "Backing up pre-existing dot files.";
-    config checkout 2>&1 | grep -E "\s+\." | awk {'print $1'} | xargs -I{} sh -c "mkdir -p \$(dirname {}); mv {} .cfg-backup/{}"
+    config checkout 2>&1 | grep -E "\s+\." | awk {'print $1'} | xargs -I{} sh -c "mkdir -p .cfg-backup/\$(dirname {}); mv {} .cfg-backup/{}"
 fi;
 
 secrets checkout
@@ -28,7 +28,7 @@ if [ $? = 0 ]; then
   echo "Checked out secrets.";
   else
     echo "Backing up pre-existing secrets.";
-    config checkout 2>&1 | grep -E "\s+\." | awk {'print $1'} | xargs -I{} sh -c "mkdir -p \$(dirname {}); mv {} .secrets-backup/{}"
+    config checkout 2>&1 | grep -E "\s+\." | awk {'print $1'} | xargs -I{} sh -c "mkdir -p .secrets-backup/\$(dirname {}); mv {} .secrets-backup/{}"
 fi;
 
 config checkout
