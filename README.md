@@ -3,7 +3,7 @@
 Configure for use on Linux or macOS:
 
 ```bash
-git clone --bare https://github.com/insertish/cfg.git $HOME/.cfg
+git clone --bare https://github.com/insertish/dotfiles.git $HOME/.cfg
 
 function config {
    /usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME $@
@@ -24,7 +24,7 @@ config config status.showUntrackedFiles no
 Configure for use on Linux or macOS (with secrets):
 
 ```bash
-git clone --bare https://github.com/insertish/cfg.git $HOME/.cfg
+git clone --bare https://github.com/insertish/dotfiles.git $HOME/.cfg
 git clone --bare https://gitlab.insrt.uk/insert/secrets.git $HOME/.secrets
 
 function config {
