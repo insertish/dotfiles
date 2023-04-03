@@ -1,6 +1,6 @@
 # dotfiles
 
-To get started on Linux or macOS, run:
+To configure on Linux or macOS, run:
 
 ```bash
 curl https://raw.githubusercontent.com/insertish/dotfiles/main/README.md | sed -n '/^# conf unix/,/^# conf unix/ p' | sh
@@ -8,7 +8,7 @@ curl https://raw.githubusercontent.com/insertish/dotfiles/main/README.md | sed -
 
 ## Setup Scripts
 
-Configure for Linux or macOS:
+Configuration for Linux or macOS:
 
 ```bash
 # conf unix
