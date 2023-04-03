@@ -3,7 +3,7 @@
 To get started on Linux or macOS, run:
 
 ```bash
-curl https://raw.githubusercontent.com/insertish/dotfiles/main/README.md | sed -n '/^# conf-unix/,/^# conf-unix/ p' | sh
+curl https://raw.githubusercontent.com/insertish/dotfiles/main/README.md | sed -n '/^# conf unix/,/^# conf unix/ p' | sh
 ```
 
 ## Setup Scripts
