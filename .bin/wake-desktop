@@ -1,0 +1,10 @@
+#!/bin/sh
+if command -v etherwake &>/dev/null
+then
+  etherwake -i enp6s0 30:9c:23:1b:a7:27
+elif command -v wakeonlan &>/dev/null
+then
+  wakeonlan 30:9c:23:1b:a7:27
+else
+  echo "Neither etherwake or wakeonlan is installed!"
+fi
