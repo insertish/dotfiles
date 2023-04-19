@@ -55,6 +55,9 @@ Configure for Windows:
 # install Git
 winget install Git.Git
 
+# install Starship
+winget install starship
+
 # clone repositories
 git clone --bare https://github.com/insertish/dotfiles.git $HOME/.cfg
 git clone --bare https://gitlab.insrt.uk/insert/secrets.git $HOME/.secrets
