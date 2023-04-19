@@ -52,11 +52,14 @@ secrets config status.showUntrackedFiles no
 Configure for Windows:
 
 ```pwsh
+# install Git
 winget install Git.Git
 
+# clone repositories
 git clone --bare https://github.com/insertish/dotfiles.git $HOME/.cfg
 git clone --bare https://gitlab.insrt.uk/insert/secrets.git $HOME/.secrets
 
+# setup aliases temporarily
 function config() {
     git --git-dir=$HOME/.cfg/ --work-tree=$HOME $args
 }
@@ -65,9 +68,16 @@ function secrets() {
     git --git-dir=$HOME/.secrets/ --work-tree=$HOME $args
 }
 
+# checkout
 config checkout
 secrets checkout
+# resolve issues yourself though unlikely to have any
 
+# disable untracked files
 config config status.showUntrackedFiles no
 secrets config status.showUntrackedFiles no
+
+# also make sure to enable ps1 script execution:
+Start-Process powershell –Verb runAs
+Set-ExecutionPolicy RemoteSigned
 ```
