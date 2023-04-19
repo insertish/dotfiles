@@ -52,8 +52,22 @@ secrets config status.showUntrackedFiles no
 Configure for Windows:
 
 ```pwsh
+winget install Git.Git
+
 git clone --bare https://github.com/insertish/dotfiles.git $HOME/.cfg
 git clone --bare https://gitlab.insrt.uk/insert/secrets.git $HOME/.secrets
 
-# TODO: https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_aliases?view=powershell-7.3
+function config() {
+    git --git-dir=$HOME/.cfg/ --work-tree=$HOME $args
+}
+
+function secrets() {
+    git --git-dir=$HOME/.secrets/ --work-tree=$HOME $args
+}
+
+config checkout
+secrets checkout
+
+config config status.showUntrackedFiles no
+secrets config status.showUntrackedFiles no
 ```
