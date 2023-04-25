@@ -87,8 +87,8 @@ Synced directories:
 <table>
   <thead>
     <tr>
-      <th rowspan=2>Name</th>
-      <th rowspan=2>Folder ID</th>
+      <th rowspan=2 width="120px">Name</th>
+      <th rowspan=2 width="180px">Folder ID</th>
       <th colspan=3>Directory</th>
     </tr>
   </thead>
