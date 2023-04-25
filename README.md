@@ -1,17 +1,13 @@
 # dotfiles
 
-To configure on Linux or macOS, run:
+- [Configure](#configure)
+- [Syncthing](#syncthing)
 
-```bash
-curl https://raw.githubusercontent.com/insertish/dotfiles/main/README.md | sed -n '/^# conf unix/,/^# conf unix/ p' | sh
-```
-
-## Setup Scripts
+## Configure
 
 Configuration for Linux or macOS:
 
 ```bash
-# conf unix
 git clone --bare https://github.com/insertish/dotfiles.git $HOME/.cfg
 git clone --bare https://gitlab.insrt.uk/insert/secrets.git $HOME/.secrets
 
@@ -46,7 +42,6 @@ secrets checkout
 
 config config status.showUntrackedFiles no
 secrets config status.showUntrackedFiles no
-# conf unix
 ```
 
 Configure for Windows:
@@ -84,3 +79,32 @@ secrets config status.showUntrackedFiles no
 Start-Process powershell –Verb runAs
 Set-ExecutionPolicy RemoteSigned
 ```
+
+## Syncthing
+
+Synced directories:
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan=2>Name</th>
+      <th rowspan=2>Folder ID</th>
+      <th colspan=3>Directory</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Linux</td>
+      <td>macOS</td>
+      <td>Windows</td>
+    </tr>
+    <tr>
+      <td>Anki</td>
+      <td><code>kjyrf-ywa9r</code></td>
+      <td><code>~/.local/share/Anki2</code></td>
+      <td><code>~/Library/Application Support/Anki2</code></td>
+      <td><code>%APPDATA%\Anki2</code></td>
+    </tr>
+</table>
