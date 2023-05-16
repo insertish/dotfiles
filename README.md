@@ -107,4 +107,25 @@ Synced directories:
       <td><code>~/Library/Application Support/Anki2</code></td>
       <td><code>%APPDATA%\Anki2</code></td>
     </tr>
+    <tr>
+      <td>ActivityWatchSync</td>
+      <td><code>czijg-sbiee</code></td>
+      <td><code>~/ActivityWatchSync</code></td>
+      <td><code>~/ActivityWatchSync</code></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Documents</td>
+      <td><code>nlsno-dkurf</code></td>
+      <td><code>~/Documents</code></td>
+      <td><code>~/Documents</code></td>
+      <td><code>%UserProfile%\Documents</code></td>
+    </tr>
+    <tr>
+      <td>Pictures</td>
+      <td><code>m7ndk-pmzlv</code></td>
+      <td><code>~/Documents</code></td>
+      <td><code>~/Documents</code></td>
+      <td><code>%UserProfile%\Pictures</code></td>
+    </tr>
 </table>
